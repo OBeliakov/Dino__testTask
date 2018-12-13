@@ -120,6 +120,9 @@ body {
 .dinos-block .dino .dino-buttons{
     margin-top:49px;
 }
+.dinos-block .dino:first-child .dino-buttons{
+    margin-top:35px;
+}
 
 .dinos-block .dino .dino-buttons a {
     background: transparent;
