@@ -117,6 +117,9 @@ body {
     justify-content: space-between;
     padding: 0px 25px;
 }
+.dinos-block .dino .dino-buttons{
+    margin-top:49px;
+}
 
 .dinos-block .dino .dino-buttons a {
     background: transparent;
