@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dino-info h1, .dino-info p {
+    margin: 0 auto;
+}
+
+.dino-info h1 {
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    max-width: 874px;
+    margin-top: 64px;
+}
+
+.dino-info p {
+    margin-top: 43px;
+    line-height: 55px;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    max-width: 874px;
+    height: 107px;
+}
+
+.dinos-block {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.dinos-block .dino {
+    width: 344px;
+    height: 304px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    background-color: #DBDAFF;
+    cursor: pointer;
+}
+
+.dinos-block .dino:hover {
+    background-color: #A8A7E2;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+}
+
+.dinos-block .dino:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+}
+
+.dinos-block .dino img {
+    width: auto;
+    margin-top: 25px;
+}
+
+.dinos-block .dino:nth-child(2) img {
+    margin-top: 52px;
+}
+
+.dinos-block .dino .dino-buttons {
+    background-color: #FAFAFA;
+    border-radius: 2px;
+    width: 100%;
+    align-self: flex-end;
+    height: 51px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+.dinos-block .dino .dino-buttons a {
+    background: transparent;
+    border-style: none;
+    color: #009688;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.dinos-block .dino .dino-buttons a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .dinos-block {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1031px;
+        justify-content: space-around;
+        height: 781px;
+    }
+}
+
+@media (max-width: 720px) {
+    .dinos-block {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1031px;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dino-info h1 {
+        line-height: 60px;
+        height: auto;
+    }
+
+    .dino-info p {
+        line-height: 55px;
+        height: auto;
+    }
+}
